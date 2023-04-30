@@ -8,6 +8,11 @@ Inheritance  : - Inheritance in Java is a mechanism in which one object acquires
  ==>   Why use inheritance in java  <===
 1.  For Method Overriding (so runtime polymorphism can be achieved).
 2.  For Code Reusability.
+
+* * * * * *  * * * *  * Why Do We Need Java Inheritance ?  * * * * * * * * ** * ** * * * *  
+1. Code Reusability  :    The code written in the Superclass is common to all subclasses. Child classes can directly use the parent class code.
+2. Method Overriding  :    Method Overriding is achievable only through Inheritance. It is one of the ways by which Java achieves Run Time Polymorphism.
+3. Abstraction       :    The concept of abstract where we do not have to provide all details is achieved through inheritance. Abstraction only shows the functionality to the user.
      
      
 #  Example 1 #
