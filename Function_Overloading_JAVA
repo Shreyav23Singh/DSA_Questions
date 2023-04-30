@@ -175,4 +175,35 @@ Product of three integer value : 402.73
 ==>   Method overloading can also be implemented by rearranging the parameters of two or more overloaded methods. 
 ==>   For example, if the parameters of method 1 are (String name, int roll_no) and  the other method is (int roll_no, String name) but both have the same name, 
       then these 2 methods are considered to be overloaded with different sequences of parameters.
+      
+ import java.io.*;
+class Student{
+  String name;
+  int roll;
+  public void Student_Id(String name , int roll){
+    System.out.println("Name :" + name +  "  "  +"Roll No :" + roll);
+    
+  }
+
+  
+  public void Student_Id(int roll , String name){
+    System.out.println("Roll no:" + roll + "  " + "Name :" + name);
+    
+  }
+  
+}
+class Main{
+  public static void main(String args[]){
+    Student S1=new Student();
+    S1.Student_Id("Shreya" , 1);
+    S1.Student_Id(2 , "RAkesh");
+    
+    
+    
+  }
+}
+
+* * * * * * *   Output  * * * * * * * *  *
+Name :Shreya  Roll No :1
+Roll no:2  Name :RAkesh
 
