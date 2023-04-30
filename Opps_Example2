@@ -1,0 +1,45 @@
+Question - Print student details like student name , student roll no , student class , student address and also mention non-parameterized constructor .
+
+class Main{
+  String name;
+  int Stu_class;
+  int roll;
+  String Address;
+
+  public void printInfo(){
+    System.out.println(this.name);
+    System.out.println(this.Stu_class);
+    System.out.println(this.roll);
+      System.out.println(this.Address);
+  }
+  Main(){  //Non -Parameterized Constructor
+    System.out.println("Constructor Called");
+  }
+
+  public static void main(String args[]){
+    Main s1=new Main();
+    s1.name="Shreya Singh";
+    s1.Stu_class=10;
+    s1.roll=1;
+    s1.Address="New Delhi";
+    Main s2=new Main();
+    s2.name="Rakesh Singh";
+    s2.Stu_class=10;
+    s2.roll=2;
+    s2.Address="Haryana";
+    s1.printInfo();
+    s2.printInfo();
+  }
+  
+}
+
+* * Output * * 
+Shreya Singh
+10
+1
+New Delhi
+Rakesh Singh
+10
+2
+Haryana
+
