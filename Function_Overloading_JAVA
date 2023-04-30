@@ -95,12 +95,12 @@ class Product{
     int b;
     int c;
 
-    public int multiply(int a , int b){
+    public int multiply(int a , int b){   //Method 1 - Multiplying two integer value
       int product = a * b;
       return product;
     }
 
-    public int multiply(int a , int b , int c){
+    public int multiply(int a , int b , int c){  //Method 2 - Multiplying three integer value
       int product = a * b * c;
       return product ;
     }
