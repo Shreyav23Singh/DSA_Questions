@@ -86,3 +86,49 @@ class Main{
 ==>    Changing the Number of Parameters.
 ==>    Changing Data Types of the Arguments.
 ==>    Changing the Order of the Parameters of Methods
+
+---------------------------------------------------------Changing the Number of Parameters -----------------------------------------------------------------------------------------------
+<==  Example 3  ==>
+
+class Product{
+    int a;
+    int b;
+    int c;
+
+    public int multiply(int a , int b){
+      int product = a * b;
+      return product;
+    }
+
+    public int multiply(int a , int b , int c){
+      int product = a * b * c;
+      return product ;
+    }
+
+  
+  
+}
+class Main{
+  public static void main(String args[]){
+  Product p1 = new Product();
+
+    int Product =p1.multiply(3 ,5);
+
+     System.out.println("Product of the two integer value :" + Product);
+
+    Product = p1.multiply(12 , 5 , 4);
+
+    System.out.println("Product of the three integer value :" + Product);
+
+    
+    
+    
+ 
+    
+  }
+}
+
+* * * * *  *  Output  * * * * * * 
+
+Product of the two integer value :15
+Product of the three integer value :240
