@@ -132,3 +132,42 @@ class Main{
 
 Product of the two integer value :15
 Product of the three integer value :240
+
+ _  - - - - - --- - - - - - - - - - - - - -Example 4 - - - - - - - - - - - - - - - - - - - -- - - - - - - -- - - - -- - - -- - - -- - - - - -
+ 2. Changing Data Types of the Arguments
+ 
+In many cases, methods can be considered Overloaded if they have the same name but have different parameter types, methods are considered to be overloaded.
+
+import java.io.*;
+class Product{
+  public int product(int x , int y , int z){
+    int prod1 = x * y;
+    return prod1;
+  }
+  public double product(double x , double y , double z){
+    double prod2 = x * y * z;
+    return prod2;
+  }
+  
+}
+class Main{
+  public static void main(String args[]){
+    Product P1 = new Product();
+    
+    int prod1 =P1.product(21,10 ,5);
+    System.out.println("Product of two integer value : " +prod1);
+
+    
+    double prod2 =P1.product(3.4 , 10.3 , 11.5);
+    System.out.println("Product of three integer value : " +prod2);
+    
+    
+  }
+}
+
+* * * * * * * * * **   Output    ** * * * ** ** * * ** * ** 
+
+
+Product of two integer value : 210
+Product of three integer value : 402.73
+
