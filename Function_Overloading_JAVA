@@ -48,3 +48,35 @@ Rakesh Singh
 Shreya Singh 24
 Shreya Singh
 24
+
+Example 2
+class Sum{
+  int x , y , z;
+
+  public int sum(int x , int y){
+    return (x+y);
+  }
+  public int sum( int x , int y ,int z){
+    return (x+y+z);
+  }
+
+  public double sum(double x , double y){
+    return x+y;
+  }
+  
+  
+}
+class Main{
+  public static void main(String args[]){
+    Sum s1=new Sum();
+    System.out.println(s1.sum(10,20));
+    System.out.println(s1.sum(10,20 ,30));
+    System.out.println(s1.sum(10.5,20.9 ));
+    
+  }
+}
+
+* * * * * * * ** ** *  ** * * * *  ** * * ** **  ** Output * * * * *  * * * ** * *  ** * * ** * * * * 
+30
+60
+31.4
