@@ -32,3 +32,24 @@ public class Main{
     System.out.println("Hi , I am Triangle  and my color is : "+t1.Color );
   }
 }
+
+
+#  Example 2 #
+class Employee{
+  String name ;
+  float salary =40000000;
+}
+class bonus extends Employee{
+  float bonus =1000000;
+}
+class Main{
+  public static void main(String[] args){
+    bonus b1=new bonus();
+    System.out.println("Salary of an Employee : " + b1.salary);
+    System.out.println("Bonus of an Employee : " + b1.bonus);
+  }
+}
+
+Output
+Salary of an Employee : 4.0E7
+Bonus of an Employee : 1000000.0
