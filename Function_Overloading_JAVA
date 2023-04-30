@@ -80,3 +80,9 @@ class Main{
 30
 60
 31.4
+
+
+ # # # # # # # # # # # # # # # #  #   #    #    #   Different Ways of Method Overloading in Java #  #   #    #    # # # # # # # # # # # # # # # # # 
+==>    Changing the Number of Parameters.
+==>    Changing Data Types of the Arguments.
+==>    Changing the Order of the Parameters of Methods
