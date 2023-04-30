@@ -170,4 +170,9 @@ class Main{
 
 Product of two integer value : 210
 Product of three integer value : 402.73
+* * ** * * * * * * * ** * * * * * * * * * * * * * *  * * *  * *     3. Changing the Order of the Parameters of Methods     * * * * * * * * * * * * * * * * * * * * * * 
+
+==>   Method overloading can also be implemented by rearranging the parameters of two or more overloaded methods. 
+==>   For example, if the parameters of method 1 are (String name, int roll_no) and  the other method is (int roll_no, String name) but both have the same name, 
+      then these 2 methods are considered to be overloaded with different sequences of parameters.
 
