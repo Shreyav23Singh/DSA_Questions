@@ -1,0 +1,38 @@
+class Demo{
+  int a;
+  int b;
+  Demo(){
+    a=10;
+    b=20;
+  }
+
+  public void print(){
+    System.out.println("a = " + a + "  " + "b = " + b + " \n");
+  }
+}
+class Main{
+  public static void main(String args[]){
+    Demo d1=new Demo();
+    Demo d2 =d1; 
+    
+    //Explanation: Assignment of obj2 to obj1 makes obj2 a reference to obj1. Therefore, any change in obj1 will be reflected in obj2 also.
+    
+    d1.a +=1;
+    d1.b+=1;
+
+    System.out.println("Value of Demo1 : ");
+
+    d1.print();
+    System.out.println("Value of Demo2 : ");
+    d2.print();
+    
+  }
+}
+
+
+* * Output * * 
+Value of Demo1 : 
+a = 11  b = 21 
+
+Value of Demo2 : 
+a = 11  b = 21 
