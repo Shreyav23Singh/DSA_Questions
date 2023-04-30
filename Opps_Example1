@@ -1,3 +1,5 @@
+//Print Pen Details like pen color , pen brandname , pen type by using class and objects
+
 class Main {
   String color;
     String brandname;
