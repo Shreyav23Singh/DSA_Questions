@@ -18,3 +18,12 @@
 ==>   It releases the resources occupied by the object.
 ==>   No explicit call is required, it is automatically invoked at the end of the program execution.
 ==>   It does not accept any parameter and cannot be overloaded.
+
+How does destructor work?
+When the object is created it occupies the space in the heap. These objects are used by the threads. If the objects are no longer is used by the thread it becomes eligible for the 
+garbage collection . The memory occupied by that object is now available for new objects that are being created. It is noted that when the garbage collector destroys the object, the 
+JRE calls the finalize() method to close the connections such as database and network connection.
+
+From the above, we can conclude that using the destructor and garbage collector is the level of developer's interference to memory management. It is the main difference between the
+two . The destructor notifies exactly when the object will be destroyed. While in Java the garbage collector does the same work automatically. These two approaches to memory 
+management have positive and negative effects. But the main issue is that sometimes the developer needs immediate access to memory management.
