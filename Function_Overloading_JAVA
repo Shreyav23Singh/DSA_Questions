@@ -112,11 +112,11 @@ class Main{
   public static void main(String args[]){
   Product p1 = new Product();
 
-    int Product =p1.multiply(3 ,5);
+    int Product =p1.multiply(3 ,5);  //Calling method to multiply two numbers
 
      System.out.println("Product of the two integer value :" + Product);
 
-    Product = p1.multiply(12 , 5 , 4);
+    Product = p1.multiply(12 , 5 , 4); ////Calling method to multiply three numbers
 
     System.out.println("Product of the three integer value :" + Product);
 
