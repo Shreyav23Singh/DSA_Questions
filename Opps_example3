@@ -1,0 +1,27 @@
+  Question 3 . Example of Parametreized constructor - Print details of employee
+
+
+class Main {
+  String Emp_name;
+  int Emp_age;
+  String Emp_id;
+  String Emp_dept;
+  Main(String Emp_name ,int Emp_age ,String Emp_id ,String Emp_dept){ //Parametreized constructor
+    this.Emp_name= Emp_name;
+    this.Emp_age=Emp_age;
+    this.Emp_id=Emp_id;
+    this.Emp_dept=Emp_dept; 
+  }
+  
+  
+  
+  public static void main(String[] args) {
+    Main E1= new Main("Shreya Singh" ,23 , "3214TCS" ,"Software Engineer");
+    System.out.println("Emp_name : " + E1.Emp_name +  
+ " " + "Emp_age : " + E1.Emp_age +"  "+ " Emp_id : "+ E1.Emp_id + " "+ "Emp_dept : " + E1.Emp_dept );
+    
+  }
+}
+
+* * Output  * * 
+Emp_name : Shreya Singh Emp_age : 23   Emp_id : 3214TCS Emp_dept : Software Engineer
