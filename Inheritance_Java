@@ -1,0 +1,29 @@
+Inheritance  : - Inheritance in Java is a mechanism in which one object acquires all the properties and behaviors of a parent object. It is an important part of OOPs 
+(Object Oriented programming system).
+
+==>  The idea behind inheritance in Java is that you can create new classes that are built upon existing classes. When you inherit from an existing class, you can reuse methods
+     and fields of the parent class. Moreover, you can add new methods and fields in your current class also.
+     
+     
+ ==>   Why use inheritance in java  <===
+1.  For Method Overriding (so runtime polymorphism can be achieved).
+2.  For Code Reusability.
+     
+     
+#  Example 1 #
+
+class Shape{
+  String Color ;
+  
+  
+}
+class Triangle extends Shape{
+  //System.out.println("Hi , I am Triangle  and mys color is : ");
+}
+public class Main{
+  public static void main(String[] args){
+    Triangle t1=new Triangle();
+    t1.Color="Red";
+    System.out.println("Hi , I am Triangle  and my color is : "+t1.Color );
+  }
+}
