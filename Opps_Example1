@@ -1,1 +1,30 @@
+class Main {
+  String color;
+    String brandname;
+    String type;
 
+  public void write(){
+    System.out.println("Good things take time");
+  }
+  public void features(){
+    System.out.println(this.color);
+    System.out.println(this.brandname);
+    System.out.println(this.type);
+    
+  }
+  public static void main(String[] args) {
+    Main m1=new Main();
+    m1.color="Blue";
+    m1.brandname ="Ox";
+    m1.type="Gel";
+    Main m2=new Main();
+    m2.color="Black";
+    m2.brandname ="link";
+    m2.type="Gliter Pen";
+    m1.write();
+    m2.write();
+    m1.features();
+    m2.features();
+    
+  }
+}
