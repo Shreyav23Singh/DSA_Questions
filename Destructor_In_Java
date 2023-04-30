@@ -1,0 +1,20 @@
+==>   In Java, when we create an object of the class it occupies some space in the memory (heap). If we do not delete these objects, it remains in the memory and occupies unnecessary space that 
+      is not upright from the aspect of programming. To resolve this problem, we use the destructor. 
+
+==>  The destructor is the opposite of the constructor. The constructor is used to initialize objects while the destructor is used to delete or destroy the object that releases the resource occupied 
+     by the object.
+
+==>  Remember that there is no concept of destructor in Java. In place of the destructor, Java provides the garbage collector that works the same as the destructor. The garbage collector is a program (thread) 
+    that runs on the JVM. It automatically deletes the unused objects (objects that are no longer used) and free-up the memory. The programmer has no need to manage memory, manually.
+    It can be error-prone, vulnerable, and may lead to a memory leak.
+    
+    
+ * *    What is the destructor in Java ? * *  
+ It is a special method that automatically gets called when an object is no longer used. When an object completes its life-cycle the garbage collector deletes that object and deallocates or releases the memory occupied 
+ by the object.It is also known as finalizers that are non-deterministic. In Java, the allocation and deallocation of objects handled by the garbage collector. The invocation of finalizers is not guaranteed because it 
+ invokes implicitly.
+ 
+ #  #  Advantages of Destructor # #
+==>   It releases the resources occupied by the object.
+==>   No explicit call is required, it is automatically invoked at the end of the program execution.
+==>   It does not accept any parameter and cannot be overloaded.
