@@ -29,6 +29,12 @@ class Solution {
     }
 }
 
+ANALYSIS :-
+
+Time Complexity :- BigO(N)
+
+Space Complexity :- BigO(1)
+
 
 -------------------------------------------------------Solution 2 : Using Stack -----------------------------------------------------------------------------
 class Solution {
@@ -49,4 +55,10 @@ class Solution {
     }
     }
 }
+
+ANALYSIS :-
+
+Time Complexity :- BigO(N)
+
+Space Complexity :- BigO(1)
 
