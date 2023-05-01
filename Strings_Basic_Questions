@@ -111,7 +111,7 @@ Manoj
 M
 Panoj
 
------------------------------------------------------
+-----------------------------------------------------* * * * * question 5 * * * * *-
 //append method
 class Main{
   public static void main(String[] args){
@@ -128,6 +128,25 @@ class Main{
 }
 Output
 RAkesh
+---------------------------------------------------------------------------------* * * * * question 6 * * * * *---------------------------------------------------------------------------
+//REVERSE a string using string builder
+class Main{
+  public static void main(String[] args){
+    StringBuilder  sb =new StringBuilder("Hello");
+    for(int i=0;i<sb.length()/2;i++){
+      int front =i;
+      int back=sb.length() -1-i;
+      char frontChar=sb.charAt(front);
+      char backChar =sb.charAt(back);
+      sb.setCharAt(front, backChar);
+      sb.setCharAt(back,frontChar);
+    }
+    System.out.println(sb);
+    
+  }
+}
+Output
+olleH
 
+---------------------------------------------------------------------------------* * * * * question 7* * * * *----------------------------------------------------------------------
 
----------------------------------------------------------------------------------* * * * * question 5* * * * *----------------------------------------------------------------------
