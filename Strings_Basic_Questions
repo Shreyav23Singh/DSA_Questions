@@ -84,7 +84,7 @@ dedication & what you are willing to sacrifice
 
 
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------* * * * * question 4 * * * * *---------------------------------------------------------------------------------------------
 
 String builder - String builder can be used when you want to modify  a string without creating a new object . 
 For example - Using the String Builder  class can boost performance when concatenating many strings together in a loop.
@@ -110,3 +110,24 @@ class Main{
 Manoj
 M
 Panoj
+
+-----------------------------------------------------
+//append method
+class Main{
+  public static void main(String[] args){
+    StringBuilder s1 =new StringBuilder("R");
+    s1.append("A");
+    s1.append("k");
+    s1.append("e");
+    s1.append("s");
+    s1.append("h");
+    System.out.print(s1);
+   
+  
+  }
+}
+Output
+RAkesh
+
+
+---------------------------------------------------------------------------------* * * * * question 5* * * * *----------------------------------------------------------------------
