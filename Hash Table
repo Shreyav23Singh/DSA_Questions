@@ -9,3 +9,53 @@
 *  Java Hashtable class is synchronized.
 
 *  The initial default capacity of Hashtable class is 11 whereas loadFactor is 0.75.
+
+import java.util.*;
+class Main{
+    public static void main(String[] args) {
+        Hashtable<Integer , String> ht =new Hashtable<>();
+        ht.put(1 ,"A"); 
+        ht.put(2,"B");
+        ht.put(3,"C");
+        ht.put(4,"D");
+        System.out.println(ht);
+        //find  "A" - we can find "A" by using get() method and key of it
+        String val=ht.get(1);
+        System.out.println(val);
+        
+        String val1=ht.get(4);
+        System.out.println(val1);
+        
+        //remove() method - Remove() method is used to remove value
+        ht.remove(2);
+        System.out.println(ht);
+        
+        ht.put(2,"Hi");
+        ht.put(4,"Shreya");
+        System.out.println(ht);
+        
+        //Iterate through your hash table
+        
+        Iterator<Integer> it = ht.keySet().iterator();
+        while(it.hasNext()){ //It will check , IS any element is present in hashtable or not?
+            Integer key = it.next(); //If it is present , than store in ' key '
+            String mapvalue =ht.get(key); //get() method - Give the key
+            
+            System.out.println("KEY :" +key + ", VALUE : " + mapvalue);
+            
+            
+        }
+        
+        
+    }
+}
+
+* *   Output   * * 
+{4=D, 3=C, 2=B, 1=A}A
+D
+{4=D, 3=C, 1=A}
+{4=Shreya, 3=C, 2=Hi, 1=A}
+KEY :4, VALUE : Shreya
+KEY :3, VALUE : C
+KEY :2, VALUE : Hi
+KEY :1, VALUE : A
