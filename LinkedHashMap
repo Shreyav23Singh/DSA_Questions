@@ -1,0 +1,13 @@
+__________________________________    Java LinkedHashMap class   ____________________________________________
+
+
+Java LinkedHashMap class is Hashtable and Linked list implementation of the Map interface, with predictable iteration order. It inherits HashMap class and implements the Map interface.
+
+* * * * * * Points to remember  * * * * * * * 
+1.  Java LinkedHashMap contains values based on the key.
+2.  Java LinkedHashMap contains unique elements.
+3.  Java LinkedHashMap may have one null key and multiple null values.
+4.  Java LinkedHashMap is non synchronized.
+5.  Java LinkedHashMap maintains insertion order.
+6.  The initial default capacity of Java HashMap class is 16 with a load factor of 0.75.
+
