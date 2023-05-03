@@ -107,3 +107,82 @@ Iterating hashmap ...
 2 Amazon
 4 Facebook
  value for key Google :  1
+ 
+ 
+ 
+ ________________________________________________________________________ Example 2 ________________________________________________________________________
+ import java.util.*;
+
+class Main {
+  public static void main(String[] args) {
+    HashMap<String , Integer> hmap1 = new HashMap<>();
+    HashMap<String , Integer> hmap2 = new HashMap<>();
+   
+    hmap1.put("Google" , 1);
+    hmap1.put("Amazon" , 2);
+    hmap1.put("Flipkart" , 3);
+    hmap1.put("Facebook" ,4);
+    hmap1.put("Apple" , 5);
+    
+    
+
+    hmap2.put("TCS" , 1);
+    hmap2.put("Wipro" , 2);
+    hmap2.put("Infosys" , 3);
+    hmap2.put("Accenture" ,4);
+    hmap2.put("Genpact" , 5);
+
+    
+    System.out.println(hmap1);
+
+    hmap1.put("Grant Thronton" ,3);
+    System.out.println(hmap1);
+
+    System.out.println("Size of the hashmap : "+hmap1.size());
+    
+    System.out.println("Top Product Based Companies");
+
+    System.out.println("Iterating hashmap ...");
+
+    for(Map.Entry m :hmap1.entrySet()){
+      System.out.println(m.getValue() +" " +m.getKey());    
+    }
+    if(hmap1.containsKey("Google")){
+      Integer val=hmap1.get("Google");
+      System.out.println(" value for key Google :  " +val);
+    }
+
+     System.out.println("Top Service Based Companies");
+    System.out.println("Iterating service Based Companies .....");
+      for(Map.Entry i : hmap2.entrySet()){
+      System.out.println(i.getValue() + " " + i.getKey());
+      }
+
+    
+    
+    
+    
+  }
+}
+
+
+*  * * * * * * * * Output * ** * * ** * * * 
+{Google=1, Apple=5, Flipkart=3, Amazon=2, Facebook=4}
+{Google=1, Apple=5, Grant Thronton=3, Flipkart=3, Amazon=2, Facebook=4}
+Size of the hashmap : 6
+Top Product Based Companies
+Iterating hashmap ...
+1 Google
+5 Apple
+3 Grant Thronton
+3 Flipkart
+2 Amazon
+4 Facebook
+ value for key Google :  1
+Top Service Based Companies
+Iterating service Based Companies .....
+2 Wipro
+3 Infosys
+5 Genpact
+1 TCS
+4 Accenture
