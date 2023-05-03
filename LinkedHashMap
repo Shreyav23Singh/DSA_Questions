@@ -11,3 +11,53 @@ Java LinkedHashMap class is Hashtable and Linked list implementation of the Map 
 5.  Java LinkedHashMap maintains insertion order.
 6.  The initial default capacity of Java HashMap class is 16 with a load factor of 0.75.
 
+_ _ _ _  _ _ _ _ _  _ _ Example _ _ _ _ _ _ _ _ _ _ __
+
+import java.util.*;
+
+class Main {
+  public static void main(String[] args) {
+    LinkedHashMap<String , String > hmap =new LinkedHashMap<>();
+    hmap.put("Deloite" , "Shreya");
+    hmap.put("D.E.Shaw" ," Delhi");
+    hmap.put("Amazon" , "Gurugram");
+    hmap.put("Google" ,"New Delhi");
+
+    System.out.println(hmap); //Print 
+    System.out.println("Size of the LinkedHashMap : " +hmap.size()); //size() method
+
+    System.out.println("Iterating LinkedHashMap ...");
+    for(Map.Entry i : hmap.entrySet()){
+      System.out.println(i.getKey() +" " + i.getValue());
+    }
+
+    System.out.println("Value for key Google : " + hmap.get("Google"));
+    //containskey() - Returns boolean value
+    System.out.println("Does it have camazon key : " + hmap.containsKey("Amazon"));
+
+    //remove() Method
+    System.out.println("Deleting Deloite : " + hmap.remove("Deloite"));
+     System.out.println(hmap);
+    
+    
+    
+    
+    
+    
+    
+  }
+}
+
+Output
+
+{Deloite=Shreya, D.E.Shaw= Delhi, Amazon=Gurugram, Google=New Delhi}
+Size of the LinkedHashMap : 4
+Iterating LinkedHashMap ...
+Deloite Shreya
+D.E.Shaw  Delhi
+Amazon Gurugram
+Google New Delhi
+Value for key Google : New Delhi
+Does it have camazon key : true
+Deleting Deloite : Shreya
+{D.E.Shaw= Delhi, Amazon=Gurugram, Google=New Delhi}
