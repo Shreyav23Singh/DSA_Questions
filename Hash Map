@@ -60,3 +60,50 @@ Iterating HashMap...
 3 Consistency
 4 Persistence
 5 Success
+
+Example 2 
+import java.util.*;
+
+class Main {
+  public static void main(String[] args) {
+    HashMap<String , Integer> hmap = new HashMap<>();
+    hmap.put("Google" , 1);
+    hmap.put("Amazon" , 2);
+    hmap.put("Flipkart" , 3);
+    hmap.put("Facebook" ,4);
+    hmap.put("Apple" , 5);
+    System.out.println(hmap);
+
+    hmap.put("Grant Thronton" ,3);
+    System.out.println(hmap);
+
+    System.out.println("Size of the hashmap : "+hmap.size());
+
+    System.out.println("Iterating hashmap ...");
+
+    for(Map.Entry m :hmap.entrySet()){
+      System.out.println(m.getValue() +" " +m.getKey());    
+    }
+
+    if(hmap.containsKey("Google")){
+      Integer val=hmap.get("Google");
+      System.out.println(" value for key Google :  " +val);
+    }
+    
+    
+    
+  }
+}
+
+* * * * * Output * * * * 
+{Google=1, Apple=5, Flipkart=3, Amazon=2, Facebook=4}
+{Google=1, Apple=5, Grant Thronton=3, Flipkart=3, Amazon=2, Facebook=4}
+Size of the hashmap :6
+Iterating hashmap ...
+1 Google
+5 Apple
+3 Grant Thronton
+3 Flipkart
+2 Amazon
+4 Facebook
+ value for key Google :  1
