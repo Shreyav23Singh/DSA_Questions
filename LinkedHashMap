@@ -61,3 +61,35 @@ Value for key Google : New Delhi
 Does it have camazon key : true
 Deleting Deloite : Shreya
 {D.E.Shaw= Delhi, Amazon=Gurugram, Google=New Delhi}
+
+
+_____________________________________________Exapmple 3 - NULL Value _______________________________________________________________
+import java.util.*;
+
+class Main {
+  public static void main(String[] args) {
+    LinkedHashMap<String , String > hmap =new LinkedHashMap<>();
+    hmap.put("Deloite" , "Shreya");
+    hmap.put("D.E.Shaw" ," Delhi");
+    hmap.put("Amazon" , "Gurugram");
+    hmap.put("Google" ,"New Delhi");
+
+    System.out.println(hmap); //Print 
+    hmap.put("Deloite" , null);
+  System.out.println(hmap);
+    
+    hmap.put(null , null);
+    hmap.put("D.E.Shaw" , null);
+   System.out.println(hmap);//Java LinkedHashMap may have one null key and multiple null values.
+    
+    
+    
+    
+    
+  }
+}
+
+Output
+{Deloite=Shreya, D.E.Shaw= Delhi, Amazon=Gurugram, Google=New Delhi}
+{Deloite=null, D.E.Shaw= Delhi, Amazon=Gurugram, Google=New Delhi}
+{Deloite=null, D.E.Shaw=null, Amazon=Gurugram, Google=New Delhi, null=null}
