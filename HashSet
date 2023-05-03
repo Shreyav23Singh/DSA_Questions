@@ -19,3 +19,43 @@ A HashSet is a collection of items where every item is unique , and it is found 
 6..  HashSet is the best approach for search operations.
 
 7..  The initial default capacity of HashSet is 16, and the load factor is 0.75.
+
+_______________________________________________ Example 1  _________________________________________________________
+
+import java.util.*;
+
+class Main {
+  public static void main(String[] args) {
+   HashSet<String> cars =new HashSet<>();
+
+    //add() method is used to add element
+    cars.add("Fortuner");
+    cars.add("Creta");
+    cars.add("Thar");
+    cars.add("BMW");
+    cars.add("Rolls Royce");
+    cars.add("BAleno");
+    System.out.println(cars);
+
+    System.out.println(cars.contains("Thar")); //conatains() method
+
+    cars.remove("BAleno"); //remove() method
+    System.out.println(cars);
+
+        System.out.println(cars.size()); //size() method
+
+    //for each loop to iterate
+
+    for(String i : cars){
+      System.out.print(i+ "  ");
+      }
+    
+    
+  }
+}
+Output
+[Thar, Rolls Royce, Fortuner, Creta, BMW, BAleno]
+true
+[Thar, Rolls Royce, Fortuner, Creta, BMW]
+5
+Thar  Rolls Royce  Fortuner  Creta  BMW 
