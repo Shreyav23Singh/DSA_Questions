@@ -1,0 +1,16 @@
+//How would you determine whether a string’s characters are all unique?
+public class uniquestring {
+    public static void main(String[] args) {
+        String str="shreya";
+        int n=str.length();
+        for(int i=0;i<n;i++){
+            for(int j=i+1;j<n;j++){
+                if(str.charAt(i)== str.charAt(j)){
+                    System.out.println("There is a common character in this string");
+                }
+                System.out.println("There is not a common character in this string");
+            }
+        }
+    }
+    
+}
